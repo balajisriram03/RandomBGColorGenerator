@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomBGColorGen</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+           
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Refresh the Page to See Random Colors</h1>
+    <script>
+        function getRandomNumber(upRange){
+   return Math.round(Math.random() * upRange);
+}
+
+function getRGBColor(){
+  let red = getRandomNumber(255);
+  let green = getRandomNumber(255);
+  let blue = getRandomNumber(255);
+  return `rgb(${red},${green},${blue})`;
+}
+function applyRGBColor(){
+  document.body.style.backgroundColor = getRGBColor();
+}
+
+applyRGBColor()
+
+    </script>
+</body>
+</html>
