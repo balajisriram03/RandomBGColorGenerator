@@ -1,1 +1,1 @@
-# RandomColorGenerator
+# RandomBGColorGenerator
